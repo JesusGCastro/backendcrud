@@ -85,12 +85,12 @@ DATABASES = {
     },
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'inventario_db'),
-        'USER': os.getenv('DB_USER', 'inventario_db'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'inventario_db'),
+        'NAME': os.getenv('DB_NAME', 'db_connection_rkm0'),
+        'USER': os.getenv('DB_USER', 'chuy'),
+        'PASSWORD': os.getenv('DB_PASSWORD', '9LtVyZ0UHCZKGBeMOnvrym4bx0M9vDya'),
         'HOST': os.getenv('DB_HOST', 'localhost'),
         'PORT': os.getenv('DB_PORT', '5432'),
-        'CONN_MAX_AGE': os.getenv('DB_CONN_MAX_AGE', 600),
+        'CONN_MAX_AGE': 300,
     }    
 }
 
